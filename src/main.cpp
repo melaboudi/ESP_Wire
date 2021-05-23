@@ -31,7 +31,7 @@ void setup() {
 /******request RFID data back from slave******************/
   for (uint8_t i = 0; i < 10; i++)
   {
-    Wire.requestFrom(8, 24);    // request 6 bytes from slave device #8
+    Wire.requestFrom(8, 29);    // request 6 bytes from slave device #8
     #ifdef DEBUG
     Serial.print("tag # ");Serial.print(i);Serial.print("= ");
     #endif
